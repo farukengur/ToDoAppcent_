@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoAPI", "ToDoAPI\ToDoAPI.csproj", "{72837B2D-6F80-4226-8D46-6D8366D006CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo", "ToDo\ToDo.csproj", "{081C9779-56AE-4E2A-A180-0FF5EE753E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Shared", "ToDo.Shared\ToDo.Shared.csproj", "{54EEB698-5064-4B64-B579-1420BC125AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72837B2D-6F80-4226-8D46-6D8366D006CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72837B2D-6F80-4226-8D46-6D8366D006CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72837B2D-6F80-4226-8D46-6D8366D006CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72837B2D-6F80-4226-8D46-6D8366D006CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081C9779-56AE-4E2A-A180-0FF5EE753E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081C9779-56AE-4E2A-A180-0FF5EE753E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081C9779-56AE-4E2A-A180-0FF5EE753E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081C9779-56AE-4E2A-A180-0FF5EE753E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EEB698-5064-4B64-B579-1420BC125AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EEB698-5064-4B64-B579-1420BC125AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EEB698-5064-4B64-B579-1420BC125AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EEB698-5064-4B64-B579-1420BC125AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0CBF4F4-2EB8-495E-BE11-BB271A4A74AA}
+	EndGlobalSection
+EndGlobal

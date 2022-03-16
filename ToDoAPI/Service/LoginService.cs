@@ -30,7 +30,7 @@ namespace ToDo.Api.Service
 
                 var model = await work.GetRepository<User>().GetFirstOrDefaultAsync(predicate:
                     x => (x.Account.Equals(Account)) &&
-                    (x.PassWord.Equals(Password)));
+                    (x.Password.Equals(Password)));
 
                 if (model == null)
                     return new ApiResponse("Yanlış Hesap Veya Şifre");
@@ -60,17 +60,17 @@ namespace ToDo.Api.Service
                     return new ApiResponse($"Mevcut Hesap:{model.Account}Başarısız,Lütfen Tekrar Kayıt Olun！");
 
                 model.CreateDate = DateTime.Now;
-                model.PassWord = model.PassWord.GetMD5();
+                model.Password = model.Password.GetMD5();
                 await repository.InsertAsync(model);
 
                 if (await work.SaveChangesAsync() > 0)
                     return new ApiResponse(true, model);
 
-                return new ApiResponse("注册失败,请稍后重试！");
+                return new ApiResponse("Kayıt Başarısız！");
             }
             catch (Exception ex)
             {
-                return new ApiResponse("注册账号失败！");
+                return new ApiResponse("Hesap Kaydedilemedi");
             }
         }
     }
